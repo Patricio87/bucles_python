@@ -15,13 +15,17 @@
 # y calcule a sumatoria total de todos los números dentro de esa secuencia
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
+# Inicializo el contador en 0
+# for ... in range(....)
+# Imprimir el valor de la sumatoria
 
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
-sumatoria = 0  # Inicializo el contador en 0
 
-# for ... in range(....)
+sumatoria = 0
 
-# Imprimir el valor de la sumatoria
+for i in range(inicio,fin):
+    sumatoria += i
+    print(sumatoria)
 
 print("terminamos!")
